@@ -226,7 +226,7 @@ class ONNXExporterTester(unittest.TestCase):
         bbox_reg_weights = None
         box_score_thresh = 0.05
         box_nms_thresh = 0.5
-        box_detections_per_img = 100
+        box_detections_per_img = 1000
 
         box_roi_pool = ops.MultiScaleRoIAlign(
             featmap_names=['0', '1', '2', '3'],
